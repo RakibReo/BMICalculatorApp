@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:id="@+id/imgone"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/bmilogo"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_bk"
+        android:fontFamily="@font/aclonica"
+        android:text="Input Your Height"
+        android:textAlignment="center"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgone"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textone"
+        app:layout_constraintStart_toStartOf="parent"
+android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:hint="feet"
+        android:textAlignment="center"
+        android:id="@+id/heightedt"
+
+
+        />
+
+    <EditText
+
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+       app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textone"
+        android:layout_margin="20dp"
+        android:hint="inch"
+        android:textSize="20sp"
+        app:layout_constraintVertical_bias=".0"
+
+        android:id="@+id/heightedtt"
+
+        />
+
+
+    <TextView
+        android:id="@+id/texttwo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_bk"
+        android:fontFamily="@font/aclonica"
+        android:text="Input Your Weight"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightedt"
+
+        app:layout_constraintVertical_bias=".1" />
+
+
+
+
+
+    <EditText
+
+    android:inputType="numberDecimal"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:hint="kilogram"
+        android:textSize="20sp"
+    android:id="@+id/weightedt"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/texttwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+    />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Calculate"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/weightedt" />
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_bk"
+        android:text="Result will be shown here"
+        android:layout_margin="20dp"
+        android:textSize="21sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/calculateBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/resultTvv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="----"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        android:textSize="21sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/resultTv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
